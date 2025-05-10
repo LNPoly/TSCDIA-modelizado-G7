@@ -1,4 +1,3 @@
-# model_processor.py
 import tensorflow as tf
 import cv2
 import numpy as np
@@ -6,7 +5,7 @@ import numpy as np
 def load_model():
     """Carga el modelo entrenado"""
     try:
-        model = tf.keras.models.load_model('model/Clasificador_de_perros_y_gatos.h5')
+        model = tf.keras.models.load_model('model/clasificador_de_perros_y_gatos.h5')
         return model
     except Exception as e:
         print(f"Error cargando el modelo: {e}")

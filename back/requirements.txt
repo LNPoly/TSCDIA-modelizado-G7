@@ -1,8 +1,10 @@
 # Dependencias principales
 Flask==3.0.2  # Servidor web
 Werkzeug==3.0.1  # Utilidades para manejo de archivos (viene con Flask)
-numpy==1.26.4  # Para procesamiento numérico (común en visión por computadora)
+numpy==2.2.5  # Para procesamiento numérico (común en visión por computadora)
 opencv-python-headless==4.9.0.80  # Procesamiento de imágenes (si usas OpenCV)
+tensorflow
+keras
 
 # Dependencias opcionales (según tu caso de uso)
 requests==2.31.0  # Si llamas a la API de R desde Python

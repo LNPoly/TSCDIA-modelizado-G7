@@ -1,19 +1,21 @@
-from python_processing.image_processor import procesar_con_python
-from python_processing.image_processor import procesar_con_python
-from model_processor import classify_image
+
+from python_processing.image_processor import process_with_python
+from models_processor import classify_image
 import numpy as np
+
+import os
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import subprocess  # Para ejecutar R
-import os
 
 app = Flask(__name__)
 CORS(app)  # Permite todas las rutas
 
-app = Flask(__name__)
-modelo = load_model('model/Clasificador_de_perros_y_gatos.h5')
+model =  os.path.join(os.path.dirname(__file__), "model", "Clasificador_de_perros_y_gatos.h5")
 app.config['UPLOAD_FOLDER'] = 'temp'
 
 # Ruta para procesar imágenes
