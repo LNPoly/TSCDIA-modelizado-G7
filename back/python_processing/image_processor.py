@@ -3,7 +3,7 @@
 import cv2 # si no está instalado, en terminal escribir: pip install opencv-python-headless
 import numpy as np
 
-def procesar_con_python(image_path):
+def proccess_with_python(image_path):
     """
     Ejemplo básico: Detecta bordes y devuelve metadata de la imagen.
     """
