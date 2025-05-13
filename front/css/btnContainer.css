@@ -1,0 +1,30 @@
+
+.container-btn-blue{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-btn-blue div{
+    margin: 5px 5px;
+}
+
+.container-btn-blue div a{
+    width: 270px;
+   border-radius: 30px;
+   border: 1px solid #dd23236c;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+@media (max-width: 623px) {
+    .container-btn-blue div a{
+        padding: 10px;
+    }
+}
+
+.container-btn-blue {
+    background-color: transparent; /* Elimina el fondo azul si lo tiene */
+    padding: 10px; /* Ajusta el padding según necesites */
+}
